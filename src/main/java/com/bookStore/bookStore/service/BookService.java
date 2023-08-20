@@ -22,4 +22,8 @@ public class BookService {
 	public ArrayList<Book> getAllBook() {
 		return (ArrayList<Book>) bRep.findAll();
 	}
+	
+	public Book getBookById(int id) {
+		return bRep.findById(id).get();
+	}
 }
