@@ -26,4 +26,9 @@ public class BookService {
 	public Book getBookById(int id) {
 		return bRep.findById(id).get();
 	}
+	
+	public void deleteById(int id)
+	{
+		bRep.deleteById(id);
+	}
 }
